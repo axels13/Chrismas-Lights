@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+html{
+  font: size 52.3%;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background-color:#333;
+}
+
+h1{
+  font-weight:bold;
+  text-align: center;
+  margin-top:2rem;
+  color: #fff;  
+  letter-spacing:0.2rem;
+  text-shadow: 0 0 30px white;
+  font-size:2.5rem;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:2rem;
+}
+.lights {
+  width: 4rem;
+  height: 4rem;
+  transition: 1s all ease;
+  border-radius:50%;
+}
+
+.btn-container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+}
+
+.on,.off,.interval{
+  padding:0.3rem 2rem;
+  margin-top:1rem;
+  background-color:#674EA7;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+}
+#count {
+  width: 2rem;
+  height: 2rem;
+  border:2px solid #ccc;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+
+.red{
+  animation:glow-1 0.5s infinite;
+  background-color:red;
+}
+
+.blue{
+  animation:glow-3 0.5s infinite;
+  background-color:blue;
+}
+.green{
+  animation:glow-4 0.5s infinite;
+  background-color:green;
+}
+
+.yellow{
+  animation:glow-2 0.5s infinite;
+  background-color:yellow;
+}
+@keyframes glow-1 {
+  0%,
+  100% {
+    box-shadow: 0 0 20px 5px #c0392b;
+  }
+  50% {
+    box-shadow: none;
+  }
+}
+
+@keyframes glow-2 {
+  0%,
+  100% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 20px 5px #f1c40f;
+  }
+}
+
+@keyframes glow-3 {
+  0%,
+  100% {
+    box-shadow: 0 0 20px 5px #74f7e1;
+  }
+  50% {
+    box-shadow: none;
+  }
+}
+
+@keyframes glow-4 {
+  0%,
+  100% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 20px 5px #2ecc71;
+  }
+}
